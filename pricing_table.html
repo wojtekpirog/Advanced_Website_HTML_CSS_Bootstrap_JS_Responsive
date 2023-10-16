@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible", content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <meta name="description" content="WebHome.com - a well-tried and trusted space for your website" />
+  <meta name="author" content="Wojciech Piróg" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>WebHome.com</title>
+  <style>
+    :root {
+      --white: rgb(240, 240, 240);
+      --red: rgb(255, 0, 0);
+      --green: rgb(0, 255, 0);
+      --dark: rgb(20, 20, 20);
+      --facebook: rgb(23, 169, 253);
+      --instagram: rgb(252, 175, 69);
+      --linkedIn: rgb(10, 102, 194);
+      background-color: rgb(40, 40, 40);
+    }
+    body {
+      font-family: 'Josefin Sans', sans-serif;  
+      color: var(--white);
+    }
+    span {
+      color: var(--red);
+    }
+    .company-name {
+      text-align: center;
+    }
+    .offer_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .plan {
+      width: 250px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;     
+      background: var(--dark);
+      padding: 10px 0;
+      margin: 21.44px 0;
+      border-radius: 10px;
+    }
+    .price, .tier {
+      font-size: 2rem;
+      margin: 16px;
+    }
+    .available_features {
+      list-style: none;
+      padding: 0;
+    }
+    .fa-check {
+      color: var(--green);
+    }
+    .fa-xmark {
+      color: var(--red);
+    }
+    .fa-brands {
+      font-size: 1.5rem;
+      padding: 10px 0;
+    }
+    .subscribe-button {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+      margin: 16px 0;
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      transition: all .3s linear;
+    }
+    .socials h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .social-links {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;      
+      padding: 0;
+      margin: 21.44px 0;
+    }
+    .social-links a {
+      color: var(--white);
+    }
+    .page-footer {
+      font-size: 14px;
+      text-align: right;
+    }
+    @media screen and (min-width: 319px) {
+      .company-name {
+        font-size: 2.5rem;
+      }
+      .plan {
+        padding: 20px;
+      }
+      .socials h2 {
+        font-size: 1.5rem;
+      }
+    }
+    @media screen and (min-width: 481px) {
+      .company-name {
+        font-size: 4rem;
+      }
+      .plan {
+        width: 400px;
+      }
+      .price, .tier {
+        font-size: 3rem;
+      }
+      .available_features li {
+        font-size: 1.5rem;
+      }
+      .subscribe-button {
+        font-size: 1.8rem;
+        padding: 20px;
+      }
+      .socials h2 {
+        font-size: 2.5rem;
+      }
+      .fa-brands {
+        font-size: 2.5rem;
+        padding: 20px 0;
+      }
+    }
+    @media screen and (min-width: 1201px) {
+      .offer_wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .plan {
+        width: 300px;
+        padding: 20px;
+      }
+      .available_features li {
+        font-size: 1rem;
+      }
+      .fa-brands {
+        font-size: 3rem;
+      }
+      .subscribe-button:hover {
+        background: rgba(255, 0, 0, .5);
+        cursor: pointer;
+      }
+      .fa-facebook:hover {
+        color: var(--facebook);
+      }
+      .fa-instagram:hover {
+        color: var(--instagram);
+      }
+      .fa-linkedin:hover {
+        color: var(--linkedIn);
+      }
+      .fa-github:hover {
+        opacity: .6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="company-name">Web<span>Home</span>.com</h1>
+  <div class="offer_wrapper">
+    <div class="plan">
+      <h2 class="tier">Basic</h2>
+      <div class="price">$5/Month</div>
+      <ul class="available_features">
+        <li><i class="fa-sharp fa-solid fa-check"></i> Up to 3 websites </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 1 user </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 1 email account </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 300MB of free disk space </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 1x 100 MB SQL DB </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 2GB Bandwidth </li>
+        <li><i class="fa-sharp fa-solid fa-xmark"></i> No priority support </li>
+      </ul>
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+    <div class="plan">
+      <h2 class="tier">Standard</h2>
+      <div class="price">$10/Month</div>
+      <ul class="available_features">
+        <li><i class="fa-sharp fa-solid fa-check"></i> Up to 15 websites </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> Up to 10 users </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> Up to 10 email accounts </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 32GB of free SSD space </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 3x 300 MB SQL DB </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 200GB Bandwidth </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> Full Priority Support </li>
+      </ul>
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+    <div class="plan">
+      <h2 class="tier">Premium</h2>
+      <div class="price">$20/Month</div>
+      <ul class="available_features">
+        <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited websites </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> Up to 100 users </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> Up to 20 email accounts </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 1TB of free SSD space </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 10 500 MB SQL DB </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> 2TB Bandwidth </li>
+        <li><i class="fa-sharp fa-solid fa-check"></i> VIP Priority Support </li>
+      </ul>
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+  </div>
+  <div class="socials">
+    <h2>Find us on social media:</h2>
+    <ul class="social-links">
+      <li><a href="#" target="_blank" draggable="true"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#" target="_blank" draggable="true"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#" target="_blank" draggable="true"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="#" target="_blank" draggable="true"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+  </div>
+  <footer class="page-footer">
+    2023 Web<span>Home</span>.com&copy;
+  </footer>
+</body>
+</html>
