@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+}
+
+/* navbar */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.navbar-toggler {
+  padding: 1rem;
+}
+
+.fa-bars {
+  font-size: 2rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
