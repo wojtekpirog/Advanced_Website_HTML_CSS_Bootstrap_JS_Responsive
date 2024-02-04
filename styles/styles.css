@@ -8,11 +8,16 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
+}
+
+[id] {
+  scroll-margin-top: 60px;
 }
 
 .hero-shadow {
@@ -67,4 +72,30 @@ div#carousel {
 
 .carousel-img-three {
   background-image: url("../images/main-carousel-3.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-item {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-img-one {
+    background-image: url("../images/main-carousel-1-hq.jpg");
+  }
+
+  .carousel-img-two {
+    background-image: url("../images/main-carousel-2-hq.jpg");
+  }
+
+  .carousel-img-three {
+    background-image: url("../images/main-carousel-3-hq.jpg");
+  }  
+}
+
+@media screen and (min-width: 1400px) {
+  .carousel-item {
+    height: 800px;
+  }
 }
