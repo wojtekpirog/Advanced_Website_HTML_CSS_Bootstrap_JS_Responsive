@@ -30,7 +30,25 @@ body {
   z-index: -1;
 }
 
+.top-hero {
+  position: relative;
+  height: 200px;
+  z-index: 0;
+}
+
+.top-hero-text {
+  height: 100%;
+  font-size: 3.6rem;
+}
+
+.aboutus-hero {
+  background-image: url("../images/about/highway-at-night.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
 /* navbar */
+
 .navbar-brand {
   font-size: 2rem;
   font-weight: 600;
@@ -47,6 +65,10 @@ body {
 
 .nav-link {
   text-transform: uppercase;
+}
+
+main {
+  margin-top: 60px;
 }
 
 /* carousel */
@@ -102,6 +124,30 @@ div#carousel {
   font-weight: bold;
 }
 
+/* Aboutus middle */
+
+.aboutus-middle {
+  background-color: #f3f9fa;
+}
+
+.aboutus-middle img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutus-text {
+  padding: 1.8rem;
+}
+
+.aboutus-text > h3 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  text-decoration: underline #007BFF;
+  font-weight: 600;
+  line-height: 1;
+  margin: 10px 0;
+}
+
 /* Footer */
 
 footer {
@@ -115,6 +161,9 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  main {
+    margin-top: 54px;
+  }
   .carousel-img-one {
     background-image: url("../images/main-carousel-1-hq.jpg");
   }
@@ -128,9 +177,14 @@ footer {
     background-image: url("../images/sunset_volkswagen-hq.jpg");
     font-size: 2.2rem;    
   }
-
   #home-passion p.lead {
     font-size: 2rem;
+  }
+  .aboutus-shadow {
+    box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, .4);
+  }
+  .aboutus-text {
+    transform: skew(15px);
   }
 }
 
