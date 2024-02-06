@@ -74,6 +74,40 @@ div#carousel {
   background-image: url("../images/main-carousel-3.jpg");
 }
 
+#home-boxes > div.container {
+  padding: 5rem;
+}
+
+.home-box i {
+  font-size: 4rem;
+}
+
+#home-passion {
+  position: relative;
+  height: 350px;
+  background-image: url("../images/sunset_volkswagen.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#home-passion p.lead {
+  font-size: 1.5rem;
+}
+
+/* home-story */
+
+#home-story h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  font-size: 1.8rem;
+}
+
 @media screen and (min-width: 768px) {
   .carousel-item {
     height: 600px;
@@ -84,14 +118,20 @@ div#carousel {
   .carousel-img-one {
     background-image: url("../images/main-carousel-1-hq.jpg");
   }
-
   .carousel-img-two {
     background-image: url("../images/main-carousel-2-hq.jpg");
   }
-
   .carousel-img-three {
     background-image: url("../images/main-carousel-3-hq.jpg");
-  }  
+  } 
+  .img-container {
+    background-image: url("../images/sunset_volkswagen-hq.jpg");
+    font-size: 2.2rem;    
+  }
+
+  #home-passion p.lead {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 1400px) {
