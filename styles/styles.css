@@ -37,14 +37,25 @@ body {
 }
 
 .top-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   font-size: 3.6rem;
 }
 
+.hero-img-background {
+  background-size: cover;
+}
+
 .aboutus-hero {
   background-image: url("../images/about/highway-at-night.jpg");
-  background-size: cover;
   background-position: center bottom;
+}
+
+.services-hero {
+  background-image: url("../images/services/services-section-background.jpg");
+  background-position: 0 75%;
 }
 
 /* navbar */
