@@ -142,10 +142,60 @@ div#carousel {
 .aboutus-text > h3 {
   font-size: 2.6rem;
   text-transform: uppercase;
-  text-decoration: underline #007BFF;
+  text-decoration: underline solid #007BFF;
   font-weight: 600;
   line-height: 1;
-  margin: 10px 0;
+  margin: 1.5rem 0;
+}
+
+.aboutus-shadow {
+  box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, .4);
+}
+.aboutus-middle > .container {
+  padding: 0;
+}
+.aboutus-text, 
+.aboutus-cards {
+  padding: 2rem;
+}
+
+/* Cardbox section */
+
+.aboutus-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.card-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-icon,
+.card-text {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  padding: 4rem;
+}
+
+.card-icon > i {
+  font-size: 3rem;
+}
+
+.card-text {
+  padding-left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 /* Footer */
@@ -157,6 +207,10 @@ footer {
 @media screen and (min-width: 768px) {
   .carousel-item {
     height: 600px;
+  }
+  .aboutus-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
@@ -177,14 +231,18 @@ footer {
     background-image: url("../images/sunset_volkswagen-hq.jpg");
     font-size: 2.2rem;    
   }
-  #home-passion p.lead {
-    font-size: 2rem;
-  }
-  .aboutus-shadow {
-    box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, .4);
-  }
   .aboutus-text {
-    transform: skew(15px);
+    transform: skew(-15deg);
+  }
+  .aboutus-img {
+    transform: skew(-15deg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
