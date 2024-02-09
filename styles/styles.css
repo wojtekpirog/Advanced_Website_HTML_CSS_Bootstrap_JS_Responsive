@@ -64,6 +64,11 @@ body {
   background-position: 50% 55%;
 }
 
+.contact-hero {
+  background-image: url("../images/contact/contact-hero.jpg");
+  background-position: center;
+}
+
 /* navbar */
 
 .navbar-brand {
@@ -253,10 +258,37 @@ div#carousel {
   object-fit: cover;
 }
 
-.card-body a.btn {
+.card-body a.btn,
+.submit-form-btn {
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+/* Contact */
+
+.contact h2 {
+  font-size: 2.4rem;
+}
+
+.contact input,
+.contact textarea,
+.contact label {
+  font-size: 1.8rem;
+}
+
+.contact-logo {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.form-group > textarea {
+  resize: none;
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 500px;
 }
 
 /* Footer */
