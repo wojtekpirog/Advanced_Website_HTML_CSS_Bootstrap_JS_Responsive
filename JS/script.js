@@ -3,7 +3,6 @@ const pageFooter = document.querySelector("footer > p");
 
 const fullYear = new Date().getFullYear();
 
-
 document.addEventListener("click", () => {
   if (navbarCollapse.classList.contains("show")) {
     navbarCollapse.classList.remove("show");
